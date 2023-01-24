@@ -1,0 +1,18 @@
+.item-title-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.item-title-container>img {
+  max-width: 25px;
+  display: auto;
+}
+
+.item-title-container>span {
+  display: block;
+  flex: 1;
+}
