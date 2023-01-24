@@ -1,12 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import MegaSelectSearch from './components/organisms/mega-select-search/MegaSelectSearch';
+import React from "react";
+
+import MegaSelectSearch from "./components/organisms/mega-select-search/MegaSelectSearch";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-     <MegaSelectSearch title="Mega select search" />
+      <MegaSelectSearch title="Mega select search" />
     </div>
   );
 }

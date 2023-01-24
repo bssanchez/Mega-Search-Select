@@ -1,4 +1,5 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
+import InputSearch from "../../atoms/input-search/InputSearch";
 
 import "./MegaSelectSearch.css";
 
@@ -6,8 +7,13 @@ type IMegaSelectSearch = {
   title: string;
 };
 
-const MegaSelectSearch: FunctionComponent<IMegaSelectSearch> = ({ title }) => {
-  return <div className="mega-select-search-container">{title}</div>;
+const MegaSelectSearch: React.FC<IMegaSelectSearch> = ({ title }) => {
+  return (
+    <div className="mega-select-search-container">
+      {title}
+      <InputSearch labelText="Destination" placeholderText="Search" />
+    </div>
+  );
 };
 
 export default MegaSelectSearch;
