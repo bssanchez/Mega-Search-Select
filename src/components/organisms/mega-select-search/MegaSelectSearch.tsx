@@ -1,5 +1,5 @@
 import React from "react";
-import InputSearch from "../../atoms/input-search/InputSearch";
+import InputSearch from "../../molecules/input-search/InputSearch";
 
 import "./MegaSelectSearch.css";
 
