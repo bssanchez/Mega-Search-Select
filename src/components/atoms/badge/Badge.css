@@ -1,0 +1,14 @@
+.badge-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 2px 5px;
+  background-color: #ccc;
+  gap: 7px;
+}
+
+.badge-container svg {
+  cursor: pointer;
+}

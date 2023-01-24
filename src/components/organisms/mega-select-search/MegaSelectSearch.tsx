@@ -1,5 +1,6 @@
 import React from "react";
 import { BiMap } from "react-icons/bi";
+import Badge from "../../atoms/badge/Badge";
 
 import CheckItem from "../../atoms/check-item/CheckItem";
 import ItemTitle from "../../atoms/item-title/ItemTitle";
@@ -24,6 +25,7 @@ const MegaSelectSearch: React.FC<IMegaSelectSearch> = ({ title }) => {
         selected={true}
       />
       <ItemTitle title={COUNTRIES['CA']} flagCode='CA' />
+      <Badge text="Muajajaja" value={109} />
     </div>
   );
 };

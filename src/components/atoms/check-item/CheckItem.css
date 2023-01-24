@@ -35,4 +35,9 @@
 .icon-check {
   color: #60A5F8;
   font-size: 1.8rem;
+  display: none;
+}
+
+.check-item-container.active .icon-check {
+  display: block;
 }
