@@ -1,0 +1,43 @@
+.check-item-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.check-item-container.active {
+  background-color: #F0F6FE;
+  border-radius: 5px;
+}
+
+.check-item-container>p {
+  flex: 1;
+  display: block;
+  margin: 0;
+}
+
+.check-item-container>p strong,
+.check-item-container>p span {
+  display: block;
+}
+
+.check-item-container>p strong {
+  font-weight: 400;
+}
+
+.check-item-container>p span {
+  font-weight: 300;
+}
+
+.icon-check {
+  color: #60A5F8;
+  font-size: 1.8rem;
+  display: none;
+}
+
+.check-item-container.active .icon-check {
+  display: block;
+}

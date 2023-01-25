@@ -4,6 +4,7 @@ import { BiSearchAlt2 } from "react-icons/bi";
 import "./InputSearch.css";
 
 type InputSearchType = {
+  id?: string;
   labelText?: string;
   placeholderText?: string;
   onTextChange?: (event: React.FormEvent<HTMLInputElement>) => void;
@@ -11,6 +12,7 @@ type InputSearchType = {
 };
 
 const InputSearch: React.FC<InputSearchType> = ({
+  id = "input-search",
   labelText = "",
   placeholderText = "",
   onTextChange = undefined,
@@ -28,8 +30,9 @@ const InputSearch: React.FC<InputSearchType> = ({
   return (
     <div className={`input-search-container ${isFocused ? "active" : ""}`}>
       <div>
-        {labelText && <label>{labelText}</label>}
+        {labelText && <label htmlFor={id}>{labelText}</label>}
         <input
+          id={id}
           type="search"
           placeholder={placeholderText}
           onFocus={() => setIsFocused(true)}

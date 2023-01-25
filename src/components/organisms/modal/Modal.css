@@ -1,0 +1,44 @@
+.modal-container {
+  position: absolute;
+  width: 700px;
+  top: 100%;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px rgba(100, 100, 100, .3);
+  border: 1px solid rgba(100, 100, 100, .3);
+  overflow: hidden;
+}
+
+.modal-container .modal-body {
+  display: flex;
+}
+
+.modal-container .modal-body .selection-container > strong,
+.modal-container .modal-body .results-container > strong {
+  display: block;
+}
+
+
+.modal-container .modal-body .selection-container > span,
+.modal-container .modal-body .results-container > span {
+  display: block;
+  color: #888;
+}
+
+.modal-container .modal-body .results-container {
+  width: 60%;
+  padding: 1rem;
+  background-color: white;
+}
+
+.modal-container .modal-body .selection-container {
+  width: 40%;
+  background-color: #FAFAFA;
+  padding: 1rem;
+}
+
+.modal-container .modal-body .results-container .results-container__list,
+.modal-container .modal-body .selection-container .selection-container__list {
+  width: 100%;
+  height: 250px;
+  overflow-y: auto;
+}
