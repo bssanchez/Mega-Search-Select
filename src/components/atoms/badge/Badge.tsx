@@ -12,7 +12,7 @@ type BadgeType = {
 const Badge: React.FC<BadgeType> = ({ text, value, onCloseClick = undefined }) => {
   return (
     <span className="badge-container">
-      {text} <VscClose onClick={onCloseClick} size={20} />
+      <span>{text}</span> <VscClose onClick={onCloseClick} size={20} />
     </span>
   );
 };

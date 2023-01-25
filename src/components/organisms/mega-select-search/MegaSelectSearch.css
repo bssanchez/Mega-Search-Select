@@ -1,3 +1,12 @@
 .mega-select-search-container {
   width: 100%;
+  display: flex;
+  gap: 15px;
+}
+
+.mega-select-search-container .form-group {
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  padding-bottom: 5px;
 }

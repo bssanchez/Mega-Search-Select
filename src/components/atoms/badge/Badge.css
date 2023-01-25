@@ -7,8 +7,14 @@
   padding: 2px 5px;
   background-color: #ccc;
   gap: 7px;
+  margin-top: 10px;
 }
 
 .badge-container svg {
   cursor: pointer;
+}
+
+.badge-container > span {
+  display: block;
+  flex: 1;
 }

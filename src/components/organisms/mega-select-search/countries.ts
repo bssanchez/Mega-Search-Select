@@ -1,4 +1,4 @@
-const COUNTRIES = {
+const COUNTRIES: any = {
   'AF': 'Afghanistan',
   'AX': 'Åland Islands',
   'AL': 'Albania',
